@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.slick-container{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.slick-slide{
+    display: flex;
+}
+.block-2,.block-3 , .content-wrapper{
+    margin: 0 auto;
+}
+.slick .image-container img{
+    width: 75%;
+    margin: 0 auto;
+    height: auto;
+}
+
+.block-2 .image-container img , 
+.block-3 .image-container img{
+    width: 100%;
+    height: auto;
+}
+.slick-arrow.slick-prev{
+    left: 20px;
+}
+.slick-arrow.slick-next{
+    right: 20px;
+}
+.slick-prev:before, .slick-next:before{
+   font-size: 30px !important;
+}
+@media screen and (min-width: 1024px) {
+    .slick .image-container img{
+        width: 60%;
+        margin: 0 auto;
+        height: auto;
+    } 
+    .slick-arrow.slick-prev{
+        left: 50px;
+    }
+    .slick-arrow.slick-next{
+        right: 50px;
+    }
+}
+@media screen and (min-width: 1536px) {
+    .slick-arrow.slick-prev{
+        left: 125px;
+    }
+    .slick-arrow.slick-next{
+        right: 125px;
+    }
+    .slick-prev:before, .slick-next:before{
+        font-size: 50px !important;
+     }
+}
